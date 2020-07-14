@@ -15,7 +15,7 @@ l'endroit où on trouve le pcpassfile pour les connexions : PCPPASSFILE=/var/lib
 l'endroit où onn trouve le pgpass pour les connexions distantes sans password : PGPASSFILE=/var/lib/pgsql/.pgpass
 
 NB : l'utilisation de pgpool impose une contrainte, les requêtes commencant par un SELECT mais comportant des INSERT UPDATE ou DELETE
-doivent commencer par un commentaire /*NO LOAD BALANCE*/ ainsi elles s'exécutent automatiquement sur la primaire.
+doivent commencer par un commentaire / * NO LOAD BALANCE * / ainsi elles s'exécutent automatiquement sur la primaire.
 
 Pour le fonctionnement des hot standby je vous conseille de paramétrer hot_standby_feedback à on
 
