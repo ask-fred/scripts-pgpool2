@@ -2,7 +2,7 @@ Ensemble de scripts pour automatiser le fonctionnement des bases postgres avec u
 Ce système se repose sur de la réplication inhérente à postgresql et pgpool-II
 
 Prérequis :
--il faut avoir pgpool et postgresql d'installé
+-il faut avoir pgpool et postgresql d'installé sur l'ensemble des machines pgpool et bdd
 -il faut que le user 'postgres' par exemple puisse faire du ssh sans autentification sur l'ensemble des machines y compris de chaque machine sur elle même par exemple executer sur chaque machine :
   ssh-keygen -t rsa
   ssh-copy-id -i ~/.ssh/id_rsa.pub bbs-scppgp-p001
