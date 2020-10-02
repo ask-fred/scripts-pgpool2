@@ -50,7 +50,7 @@
     then
      echo primaire est sur $PRIMARY_IP
      export PGPOOL_MAITRE=`pcp_watchdog_info -h $DELEGATE_IP -p 9898 -U $USER -w |grep MASTER |awk '{print $3}' `
-     export IP_MAITRE=`nslookup $PGPOOL_MAITRE |grep '10.172.236.' |awk '{print $2}' `
+     export IP_MAITRE=`nslookup $PGPOOL_MAITRE |grep $VLAN |awk '{print $2}' `
      echo pool maitre est sur $IP_MAITRE
      if [ "$IP_MAITRE" == "$PRIMARY_IP" ]
      then
