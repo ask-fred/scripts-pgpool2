@@ -27,9 +27,11 @@ Les scripts se basent sur des variables d'environnements suivantes :
 BASE=postgres
 l'endroit où on trouve les scripts : SCRIPT=/var/lib/pgsql/script
 le user avec lequel les scripts vont se connecter aux bases : USER=postgres
+le base sur laquelle on va se connecter : BASE=postgres
 l'IP virtuelle utilisée par pgpool-II : DELEGATE_IP=10.172.236.140
 la racine de la base de donnée : PGDATA=/app/db/postgres/data
 l'emplacement des binaires postgres : PGBIN=/usr/pgsql-10/bin/
+le VLAN sur lequel sont les machines : VLAN=10.172.236
 l'endroit où on trouve le pcpassfile en droits 600 pour les connexions : PCPPASSFILE=/var/lib/pgsql/.pcppass
 l'endroit où onn trouve le pgpass en droits 600 pour les connexions distantes sans password : PGPASSFILE=/var/lib/pgsql/.pgpass
 
